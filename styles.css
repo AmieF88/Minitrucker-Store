@@ -1,0 +1,144 @@
+
+
+body {
+ background-color: rgb(51, 46, 46);
+  background-size: cover;         /* makes the image fill the entire viewport */
+  background-repeat: no-repeat;   /* prevents tiling */
+  background-position: center;    /* centers the image */
+  background-attachment: fixed;   /* makes it stay in place while scrolling */
+  color: rgb(255, 255, 255);                   /* text color */
+}
+
+
+#About-US {
+  margin-top: 60px; /* space between nav bar and About Us */
+  border-bottom: 8px solid black; /* THICK LINE */
+  padding-bottom: 40px;           /* Space above the line */
+  margin-bottom: 60px;            /* Space after the line before next section */
+}
+
+#myVideo {
+  width: 100%;          /* full width of the page */
+  height: 50vh;         /* 50% of the viewport height */
+  object-fit: cover;    /* maintain aspect ratio, crop if needed */
+  display: block;       /* remove extra spacing below the video */
+    border: 5px solid black; /* black border, adjust thickness */
+  border-radius: 10px;      /* optional, rounded corners */
+}
+
+
+#partition {
+  width: 100%;
+  height: 30%;
+  object-fit: cover;
+  display: block;
+}
+
+.full-width {
+  width: 100vw;   /* full screen width */
+  margin-left: calc(50% - 50vw); 
+  margin-right: calc(50% - 50vw);
+  padding: 0;
+}
+
+
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 200px;      /* make them all the same height */
+  object-fit: cover;  /* crops nicely instead of stretching */
+  border-radius: 8px; /* optional */
+  display: block;
+}
+
+.form-box {
+  max-width: 500px;      /* limits width */
+  margin: 0 auto;        /* centers it */
+  border: 1px solid #ccc; /* subtle border */
+  border-radius: 8px;     /* rounded corners */
+  background-color: #f9f9f9; /* light background */
+}
+
+.form-box {
+  max-width: 500px;      
+  margin: 50px auto 0 auto;
+  border: 1px solid #ccc; 
+  border-radius: 8px;     
+  background-color: #f9f9f9; 
+  padding: 20px;
+  color: #000;  /* text color */
+}
+
+.form-box input,
+.form-box textarea {
+  color: #000;
+}
+
+.form-box {
+  max-width: 500px;
+  margin: 50px auto 0 auto;  /* push down and center */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  color: #000;
+
+  /* background image */
+  background-image: url('cyko.jpg');  /* replace with your image */
+  background-size: cover;        /* make it cover the whole box */
+  background-position: center;   /* center it */
+  background-repeat: no-repeat;
+
+  /* overlay effect for faint look */
+  background-color: rgba(255, 255, 255, 0.8);  /* white overlay at 80% opacity */
+  backdrop-filter: blur(2px);  /* optional: subtle blur */
+}
+
+
+.page-background {
+background-image: url('diamondplate3.jpg');
+  background-size: cover;           /* fills the screen */
+  background-position: center;      /* centers image */
+  background-repeat: no-repeat;
+  background-attachment: fixed;     /* optional: makes it stay while scrolling */
+}
+
+
+
+
+.services-background {
+  position: relative;
+/* background-image: url('lawless.jpg'); */
+  background-position: fill;
+  background-repeat: no-repeat;
+
+}
+
+.custom-card {
+  background-color: #000000; /* change to any hex, rgb, or color name */
+  color: #ffffff;            /* font color */
+}
+
+
+.our-socials {
+  font-size: 2rem;      /* adjust size as needed */
+  font-weight: bold;    /* optional: make it bold */
+  color: #ffffff;       /* text color */
+}
+
+.card-img-overlay {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* makes text more readable */
+}
+
+.social-icons img {
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2); /* slightly enlarge on hover */
+}
